@@ -1,0 +1,149 @@
+[
+  {
+    "id": "plan_bsmart_2990",
+    "name": "Plan B-Smart 29.90",
+    "monthlyFee": 29.9,
+    "category": "pospago_movil",
+    "dataHighSpeed": "25 GB en alta velocidad 5G",
+    "dataThen": "Internet ilimitado a velocidad reducida (256 kbps)",
+    "unlimitedApps": [
+      "WhatsApp",
+      "Waze",
+      "Llamadas y SMS a todo destino nacional"
+    ],
+    "callsAndSms": "Llamadas ilimitadas a cualquier operador nacional",
+    "roamingLatam": "No disponible en este plan",
+    "restrictions": [
+      "Velocidad reducida tras consumir los 25 GB de alta velocidad.",
+      "Aplica para clientes nuevos y portabilidad.",
+      "Sujeto a evaluación crediticia estándar en B-POS."
+    ],
+    "effectivePeriod": "Vigente hasta el 30 de Noviembre 2026",
+    "featuredTag": "Económico",
+    "relatedDocumentId": "doc_cartilla_bsmart",
+    "editorialStatus": "publicado",
+    "version": 1
+  },
+  {
+    "id": "plan_bsmart_3990",
+    "name": "Plan B-Smart 39.90",
+    "monthlyFee": 39.9,
+    "category": "pospago_movil",
+    "dataHighSpeed": "45 GB en alta velocidad 5G",
+    "dataThen": "Internet ilimitado a velocidad reducida (256 kbps)",
+    "unlimitedApps": [
+      "WhatsApp",
+      "Facebook",
+      "Instagram",
+      "Waze"
+    ],
+    "callsAndSms": "Llamadas y SMS ilimitados a todo destino nacional",
+    "roamingLatam": "No disponible en este plan",
+    "restrictions": [
+      "Uso de redes sociales no descuenta la bolsa de 45 GB principal.",
+      "Permite tethering (compartir internet) hasta 15 GB."
+    ],
+    "effectivePeriod": "Vigente hasta el 30 de Noviembre 2026",
+    "relatedDocumentId": "doc_cartilla_bsmart",
+    "editorialStatus": "publicado",
+    "version": 1
+  },
+  {
+    "id": "plan_bsmart_4990",
+    "name": "Plan B-Smart 49.90",
+    "monthlyFee": 49.9,
+    "category": "pospago_movil",
+    "dataHighSpeed": "70 GB en alta velocidad 5G (+25 GB libres comprobados)",
+    "dataThen": "Internet ilimitado a velocidad reducida (256 kbps)",
+    "unlimitedApps": [
+      "WhatsApp",
+      "Facebook",
+      "Instagram",
+      "TikTok",
+      "Waze"
+    ],
+    "callsAndSms": "Llamadas y SMS ilimitados a todo destino nacional",
+    "roamingLatam": "WhatsApp libre en 10 países de Latinoamérica",
+    "restrictions": [
+      "Roaming activo en Bolivia, Chile, Colombia, Brasil, México, USA, Ecuador, Panamá, Argentina y Uruguay.",
+      "Tethering permitido sin restricción."
+    ],
+    "effectivePeriod": "Vigente hasta el 30 de Noviembre 2026",
+    "featuredTag": "Más Vendido ⭐",
+    "relatedDocumentId": "doc_cartilla_bsmart",
+    "editorialStatus": "publicado",
+    "version": 1
+  },
+  {
+    "id": "plan_bsmart_6990",
+    "name": "Plan B-Smart 69.90",
+    "monthlyFee": 69.9,
+    "category": "pospago_movil",
+    "dataHighSpeed": "105 GB en alta velocidad 5G",
+    "dataThen": "Internet ilimitado a velocidad reducida (512 kbps)",
+    "unlimitedApps": [
+      "WhatsApp",
+      "Facebook",
+      "Instagram",
+      "TikTok",
+      "YouTube",
+      "Waze",
+      "Spotify"
+    ],
+    "callsAndSms": "Llamadas y SMS ilimitados a nivel nacional + 200 min LDI (USA y Canadá)",
+    "roamingLatam": "WhatsApp libre + 8 GB libres internacionales en 10 países",
+    "restrictions": [
+      "Velocidad de degradación mejorada a 512 kbps.",
+      "Minutos internacionales aplican a fijos y celulares de USA y Canadá."
+    ],
+    "effectivePeriod": "Vigente hasta el 30 de Noviembre 2026",
+    "featuredTag": "Mejor Relación Valor/Precio",
+    "relatedDocumentId": "doc_cartilla_bsmart",
+    "editorialStatus": "publicado",
+    "version": 1
+  },
+  {
+    "id": "plan_bsmart_8990",
+    "name": "Plan B-Smart 89.90",
+    "monthlyFee": 89.9,
+    "category": "pospago_movil",
+    "dataHighSpeed": "150 GB en alta velocidad 5G",
+    "dataThen": "Internet ilimitado a 512 kbps",
+    "unlimitedApps": [
+      "Todas las redes sociales",
+      "YouTube y TikTok sin consumo",
+      "Spotify y Apple Music"
+    ],
+    "callsAndSms": "Llamadas y SMS ilimitados a todo destino + 400 min LDI",
+    "roamingLatam": "WhatsApp libre + 15 GB libres internacionales en 15 países",
+    "restrictions": [
+      "Incluye suscripción bonificada a plataforma de video por 6 meses."
+    ],
+    "effectivePeriod": "Vigente hasta el 30 de Noviembre 2026",
+    "relatedDocumentId": "doc_cartilla_bsmart",
+    "editorialStatus": "publicado",
+    "version": 1
+  },
+  {
+    "id": "plan_fibra_1000",
+    "name": "Bitel Fibra Óptica 1000 Mbps Hogar",
+    "monthlyFee": 79.9,
+    "category": "fibra_hogar",
+    "dataHighSpeed": "1000 Mbps simétricos (subida y bajada idénticas)",
+    "dataThen": "100% ilimitado sin umbral de degradación",
+    "unlimitedApps": [
+      "Todo el tráfico sin restricción"
+    ],
+    "callsAndSms": "Línea fija digital opcional incluida",
+    "roamingLatam": "No aplica (servicio fijo)",
+    "restrictions": [
+      "Tarifa promocional de S/ 79.90 durante los primeros 6 meses, luego S/ 99.90 regular.",
+      "Sujeto a factibilidad técnica en cobertura Bitel Fibra."
+    ],
+    "effectivePeriod": "Vigente hasta el 30 de Noviembre 2026",
+    "featuredTag": "Oferta Hogar Fibra",
+    "relatedDocumentId": "doc_guia_fibra",
+    "editorialStatus": "publicado",
+    "version": 1
+  }
+]

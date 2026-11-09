@@ -1,0 +1,100 @@
+[
+  {
+    "id": "cat_pospago",
+    "name": "Pospago B-Smart",
+    "slug": "pospago-b-smart",
+    "description": "Planes móviles pospago B-Smart, portabilidad, líneas nuevas y roaming",
+    "iconName": "Smartphone",
+    "color": "#0284c7",
+    "order": 1,
+    "isPublic": true,
+    "isArchived": false,
+    "subcategories": [
+      "Planes B-Smart",
+      "Portabilidad",
+      "Migraciones",
+      "Roaming"
+    ]
+  },
+  {
+    "id": "cat_prepago",
+    "name": "Prepago TiMi",
+    "slug": "prepago-timi",
+    "description": "Paquetes TiMi, super recargas, bonos promocionales y canal tradicional",
+    "iconName": "Zap",
+    "color": "#d97706",
+    "order": 2,
+    "isPublic": true,
+    "isArchived": false,
+    "subcategories": [
+      "Super Recargas",
+      "Bono Bienvenida",
+      "Paquetes Apps"
+    ]
+  },
+  {
+    "id": "cat_fibra",
+    "name": "Bitel Fibra Hogar",
+    "slug": "fibra-hogar",
+    "description": "Internet fijo simétrico por fibra óptica FTTH, promociones y cobertura",
+    "iconName": "Wifi",
+    "color": "#059669",
+    "order": 3,
+    "isPublic": true,
+    "isArchived": false,
+    "subcategories": [
+      "Planes Fibra",
+      "Mesh Wi-Fi 6",
+      "Migración Cobre"
+    ]
+  },
+  {
+    "id": "cat_equipos",
+    "name": "Equipos & Terminales",
+    "slug": "equipos-terminales",
+    "description": "Smartphones financiado y al contado, cuotas B-POS y stock de almacén",
+    "iconName": "Tag",
+    "color": "#7c3aed",
+    "order": 4,
+    "isPublic": true,
+    "isArchived": false,
+    "subcategories": [
+      "Gama Alta",
+      "Gama Media",
+      "Gama Entrada",
+      "Financiamiento"
+    ]
+  },
+  {
+    "id": "cat_sistemas",
+    "name": "Sistemas B-POS & SISACT",
+    "slug": "sistemas-bpos-sisact",
+    "description": "Procedimientos de activación, biometría RENIEC, cobranza y manuales operativos",
+    "iconName": "Cpu",
+    "color": "#475569",
+    "order": 5,
+    "isPublic": true,
+    "isArchived": false,
+    "subcategories": [
+      "Biometría",
+      "Reposición Chip",
+      "Plataforma B-POS"
+    ]
+  },
+  {
+    "id": "cat_normativas",
+    "name": "Normativas & Circulares",
+    "slug": "normativas-circulares",
+    "description": "Directivas regulatorias OSIPTEL, políticas de privacidad y circulares legales",
+    "iconName": "ShieldCheck",
+    "color": "#dc2626",
+    "order": 6,
+    "isPublic": true,
+    "isArchived": false,
+    "subcategories": [
+      "Regulación OSIPTEL",
+      "Protección al Consumidor",
+      "Seguridad"
+    ]
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "blk_aviso_urgente",
+    "type": "notice",
+    "title": "Comunicado Prioritario para la Fuerza de Ventas",
+    "subtitle": "Dirección Comercial Bitel Perú",
+    "content": "Todo cambio de plan o migración a portafolio B-Smart debe procesarse mediante SISACT validando previamente el historial crediticio en B-POS. Para clientes portados, el beneficio se activa a las 00:00 horas del día siguiente.",
+    "data": {
+      "urgencyLevel": "urgente"
+    },
+    "order": 1,
+    "isVisible": true
+  },
+  {
+    "id": "blk_antes_ahora_bsmart",
+    "type": "before_after",
+    "title": "Comparativa de Cambio: Planes B-Smart",
+    "subtitle": "Ajuste en capacidad y beneficios internacionales",
+    "content": "",
+    "data": {
+      "before": "Plan B-Smart 49.90 otorgaba 45 GB en alta velocidad y cobro por llamadas de roaming fuera del país.",
+      "after": "Plan B-Smart 49.90 otorga 70 GB en alta velocidad 5G (+25 GB libres comprobados) y WhatsApp ilimitado en Roaming para 10 países."
+    },
+    "order": 2,
+    "isVisible": true
+  },
+  {
+    "id": "blk_faq_comercial",
+    "type": "faq",
+    "title": "Preguntas Frecuentes de Asesores Comerciales",
+    "subtitle": "Resolución de dudas recurrentes en punto de venta",
+    "content": "",
+    "data": {
+      "faqs": [
+        {
+          "question": "¿Qué ocurre con los gigas si el cliente no los consume en el mes?",
+          "answer": "En planes B-Smart, los gigas no consumidos no se acumulan para el mes siguiente. Sin embargo, al terminarse la bolsa de alta velocidad, la velocidad se reduce a 256 kbps sin corte de servicio."
+        },
+        {
+          "question": "¿En cuántos países aplica el beneficio de Roaming WhatsApp?",
+          "answer": "Aplica en 10 países seleccionados: Bolivia, Chile, Colombia, Brasil, México, USA, Ecuador, Panamá, Argentina y Uruguay."
+        },
+        {
+          "question": "¿Cómo debe verificar un asesor si el equipo tiene stock en tienda?",
+          "answer": "Ingresar el código de material en el módulo de Inventario B-POS antes de emitir la proforma. Todo precio financiado está sujeto a stock disponible físico."
+        }
+      ]
+    },
+    "order": 3,
+    "isVisible": true
+  },
+  {
+    "id": "blk_training_link",
+    "type": "training_link",
+    "title": "Videocapacitación Comercial: Argumentario B-Smart & B-POS",
+    "subtitle": "Sesión grabada de actualización para asesores y supervisores de tienda",
+    "content": "Capacitación oficial impartida por el equipo de producto. Incluye demostración del flujo de reposición y speech de ventas.",
+    "data": {
+      "platform": "Google Drive Video",
+      "url": "https://drive.google.com/file/d/1BZI_Bitel_Training_B-Smart_2026/view?usp=sharing",
+      "duration": "45 minutos",
+      "instructor": "Nelyess (Capacitadora Comercial Bitel)"
+    },
+    "order": 4,
+    "isVisible": true
+  }
+]

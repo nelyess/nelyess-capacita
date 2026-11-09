@@ -1,0 +1,255 @@
+[
+  {
+    "id": "news_1",
+    "title": "Actualización Portafolio Pospago B-Smart: +25 GB Libres y WhatsApp en Roaming",
+    "summary": "A partir del ciclo de facturación actual, el plan B-Smart 49.90 sube de 45 GB a 70 GB en alta velocidad 5G y activa Roaming WhatsApp en 10 países.",
+    "categoryId": "cat_pospago",
+    "urgency": "urgente",
+    "editorialStatus": "publicado",
+    "validityStatus": "vigente",
+    "publishDate": "2026-11-05T08:00:00Z",
+    "lastUpdated": "2026-11-06T10:15:00Z",
+    "startDate": "2026-11-05",
+    "endDate": "2026-11-30",
+    "effectiveDate": "Del 05/11/2026 al 30/11/2026",
+    "author": "Nelyess (Capacitadora Comercial Bitel)",
+    "source": "Boletín Oficial de Producto Bitel Nº 44-2026",
+    "targetAudience": [
+      "Tiendas Propias Bitel",
+      "Call Center Inbound/Outbound",
+      "Fuerza de Ventas Terreno"
+    ],
+    "content": "Estimado equipo comercial y asesores de atención Bitel: Compartimos la actualización oficial del portafolio móvil Pospago B-Smart. Aspectos operativos clave:\n1. Clientes nuevos y portados a partir del 05/11/2026 reciben el beneficio de forma inmediata en B-POS y SISACT.\n2. El plan B-Smart 49.90 pasa de 45 GB a 70 GB en alta velocidad 5G (+25 GB de incremento libre comprobado).\n3. El paquete de Roaming incluye minutos y gigas libres para WhatsApp en Bolivia, Chile, Colombia, Brasil, México, USA, Ecuador, Panamá, Argentina y Uruguay.",
+    "whatChanges": [
+      "Plan B-Smart 49.90 sube de 45 GB a 70 GB en alta velocidad 5G (+25 GB libres comprobados).",
+      "Plan B-Smart 69.90 incorpora Roaming Libre WhatsApp y 8 GB libres internacionales.",
+      "Plan B-Smart 89.90 suma suscripción bonificada a plataforma de video por 6 meses.",
+      "Cero cobro por reconexión si el cliente regulariza dentro de las 48 horas de corte."
+    ],
+    "whatStays": [
+      "Gigas ilimitados en redes sociales principales (WhatsApp, Facebook, Instagram, Waze).",
+      "Ciclo de facturación mensual y fecha de vencimiento habitual del recibo.",
+      "Tarifa fija mensual sin cargos ocultos ni penalidades de salida."
+    ],
+    "beforeAfter": {
+      "before": "Plan B-Smart 49.90 otorgaba 45 GB en alta velocidad y roaming con cobro adicional por consumo.",
+      "after": "Plan B-Smart 49.90 otorga 70 GB en alta velocidad 5G y roaming libre para WhatsApp en 10 países sin costo extra."
+    },
+    "salesArguments": [
+      "Bitel ofrece más gigas de alta velocidad que cualquier otro operador en el rango de S/ 49.90.",
+      "El roaming WhatsApp permite al cliente viajar sin cambiar de chip ni preocuparse por saldo.",
+      "Internet ilimitado a 256 kbps al terminar la bolsa de 70 GB: el cliente nunca se queda incomunicado."
+    ],
+    "systemCodes": [
+      {
+        "system": "B-POS",
+        "code": "PLAN_BSMART_4990_2026",
+        "description": "Código de plan para venta en terminal físico"
+      },
+      {
+        "system": "SISACT",
+        "code": "POS_BSMART_PROMO_NOV",
+        "description": "Activación en sistema web de contrataciones"
+      },
+      {
+        "system": "B-Sales",
+        "code": "PROMO_PORTA_70GB",
+        "description": "Bono para ventas por portabilidad"
+      }
+    ],
+    "relatedDocumentIds": [
+      "doc_cartilla_bsmart"
+    ],
+    "customWhatsAppText": "📲 *¡COMUNICADO BITEL - NOVEDAD POSPAGO!* 📲\n\nEstimado cliente, ahora el *Plan B-Smart 49.90* te da *70 GB en alta velocidad 5G* (antes 45 GB) + WhatsApp libre en 10 países de América ✈️\n\n✅ 70 GB en 5G\n✅ WhatsApp, Facebook, Instagram y Waze ILIMITADOS\n✅ Llamadas ilimitadas a todo el Perú\n\n_Pide tu portabilidad hoy mismo sin costo de chip._ 🇵🇪",
+    "viewsCount": 1420,
+    "subjectToStock": false,
+    "needsReview": true,
+    "version": 1
+  },
+  {
+    "id": "news_2",
+    "title": "Bitel Fibra Óptica Simétrica hasta 1000 Mbps con Wi-Fi 6 Mesh sin Costo de Instalación",
+    "summary": "Campaña especial de Fibra Hogar: 1000 Mbps simétricos los primeros 6 meses por S/ 79.90/mes con router Wi-Fi 6 de alta cobertura.",
+    "categoryId": "cat_fibra",
+    "urgency": "novedad",
+    "editorialStatus": "publicado",
+    "validityStatus": "vigente",
+    "publishDate": "2026-11-01T08:00:00Z",
+    "startDate": "2026-11-01",
+    "endDate": "2026-11-30",
+    "effectiveDate": "Del 01/11/2026 al 30/11/2026",
+    "author": "Nelyess (Capacitadora Comercial Bitel)",
+    "source": "Circular Hogar Nº 18-2026",
+    "targetAudience": [
+      "Canal Hogar Terreno",
+      "Televentas Fibra",
+      "Módulos en Centros Comerciales"
+    ],
+    "content": "Campaña de penetración de Fibra Óptica FTTH Bitel en zonas con factibilidad técnica. Ofrece 1000 Mbps al precio de 300 Mbps durante 6 meses completos.",
+    "whatChanges": [
+      "Velocidad promocional de 1000 Mbps durante los primeros 6 meses por S/ 79.90/mes.",
+      "Instalación técnica y cableado interno bonificado al 100% en zonas con cobertura directa.",
+      "Entrega de equipo ONT con Wi-Fi 6 sin costo de alquiler mensual."
+    ],
+    "whatStays": [
+      "Velocidad 100% simétrica (misma velocidad de subida que de descarga).",
+      "Sin límite mensual de descarga ni umbral de reducción de velocidad."
+    ],
+    "beforeAfter": {
+      "before": "Plan 1000 Mbps tenía tarifa regular de S/ 149.90 y costo de instalación de S/ 50.",
+      "after": "Plan 1000 Mbps promocional a S/ 79.90/mes los primeros 6 meses con instalación bonificada."
+    },
+    "salesArguments": [
+      "Fibra 100% simétrica ideal para teletrabajo, streaming en 4K y gaming sin latencia.",
+      "Wi-Fi 6 permite conectar más de 30 dispositivos simultáneos sin caídas de señal."
+    ],
+    "systemCodes": [
+      {
+        "system": "SISACT_HOGAR",
+        "code": "FIBRA_1000_PROMO6M",
+        "description": "Alta de servicio de fibra residencial"
+      }
+    ],
+    "relatedDocumentIds": [
+      "doc_guia_fibra"
+    ],
+    "viewsCount": 980,
+    "subjectToStock": false,
+    "version": 1
+  },
+  {
+    "id": "news_3",
+    "title": "Protocolo Obligatorio de Validación Biométrica y Reposición de Chip en B-POS",
+    "summary": "Nueva directiva de seguridad comercial: Toda reposición de chip SIM requiere biometría dactilar y captura fotográfica de validación RENIEC.",
+    "categoryId": "cat_sistemas",
+    "urgency": "urgente",
+    "editorialStatus": "publicado",
+    "validityStatus": "vigente",
+    "publishDate": "2026-11-02T09:00:00Z",
+    "startDate": "2026-11-02",
+    "endDate": "2027-12-31",
+    "effectiveDate": "Del 02/11/2026 al 31/12/2027",
+    "author": "Nelyess (Capacitadora Comercial Bitel)",
+    "source": "Gerencia de Seguridad y Sistemas Bitel",
+    "targetAudience": [
+      "Tiendas Propias",
+      "Distribuidores Autorizados Bitel"
+    ],
+    "content": "Por disposición de OSIPTEL y políticas internas de ciberseguridad Bitel, queda terminantemente prohibida la reposición de chip manual sin lectura de huella dactilar activa en el lector biométrico.",
+    "whatChanges": [
+      "Obligatorio: tres intentos biométricos antes de habilitar el flujo de excepción con foto de DNI.",
+      "Notificación por SMS al número alternativo del titular inmediatamente tras la reposición.",
+      "Bloqueo preventivo de transacciones financieras durante las primeras 4 horas de la nueva SIM."
+    ],
+    "whatStays": [
+      "Costo de reposición de chip SIM regular en S/ 5.00 en sistema.",
+      "Horario de atención habitual de cajas y atención al cliente."
+    ],
+    "beforeAfter": {
+      "before": "Reposición se realizaba únicamente con comprobación visual de DNI en casos de falla.",
+      "after": "Reposición exige biometría activa + captura fotográfica del documento en alta resolución."
+    },
+    "salesArguments": [
+      "Mayor protección y tranquilidad para la línea y cuentas bancarias del cliente."
+    ],
+    "systemCodes": [
+      {
+        "system": "B-POS",
+        "code": "SIM_REPOSICION_BIO_V2",
+        "description": "Módulo de reposición con validación segura"
+      }
+    ],
+    "relatedDocumentIds": [
+      "doc_directiva_biometria"
+    ],
+    "viewsCount": 1650,
+    "subjectToStock": false,
+    "version": 1
+  },
+  {
+    "id": "news_4",
+    "title": "Super Recargas Prepago TiMi: TikTok, YouTube y Free Fire por S/ 5",
+    "summary": "El paquete TiMi 5 incluye 3 GB libres por 5 días + gigas exclusivos para TikTok, YouTube y Free Fire sin consumir saldo.",
+    "categoryId": "cat_prepago",
+    "urgency": "vigente",
+    "editorialStatus": "publicado",
+    "validityStatus": "vigente",
+    "publishDate": "2026-11-01T08:00:00Z",
+    "startDate": "2026-11-01",
+    "endDate": "2026-12-31",
+    "effectiveDate": "Del 01/11/2026 al 31/12/2026",
+    "author": "Nelyess (Capacitadora Comercial Bitel)",
+    "source": "Boletín Prepago TiMi Nº 12-2026",
+    "targetAudience": [
+      "Bodegas",
+      "Farmacias",
+      "Canal Tradicional",
+      "Call Center"
+    ],
+    "content": "Paquete de recarga diseñado para el segmento joven y de consumo diario. Proporciona navegación en video y juegos sin gastar la bolsa principal.",
+    "whatChanges": [
+      "TikTok se suma a apps libres sin consumir gigas de la bolsa principal en recargas desde S/ 5.",
+      "Vigencia extendida de 3 a 5 días para la bolsa de 3 GB."
+    ],
+    "whatStays": [
+      "Llamadas y SMS ilimitados a cualquier operador nacional durante los 5 días de vigencia."
+    ],
+    "beforeAfter": {
+      "before": "Paquete TiMi 5 duraba 3 días y no incluía TikTok en libre consumo.",
+      "after": "Paquete TiMi 5 dura 5 días e incluye TikTok, YouTube y Free Fire sin descontar gigas."
+    },
+    "salesArguments": [
+      "El mejor paquete de recarga en bodegas de todo el Perú."
+    ],
+    "systemCodes": [
+      {
+        "system": "B-POS",
+        "code": "TIMI_S5_PROMO",
+        "description": "Venta de recarga electrónica en canal tradicional"
+      }
+    ],
+    "viewsCount": 890,
+    "subjectToStock": false,
+    "version": 1,
+    "relatedDocumentIds": []
+  },
+  {
+    "id": "news_5",
+    "title": "Próxima Campaña Navideña 2026: Bono Doble Gigas en Portabilidad",
+    "summary": "A partir del 01 de Diciembre entrará en vigor la campaña Navidad Bitel con doble de gigas durante 12 meses para portabilidades.",
+    "categoryId": "cat_pospago",
+    "urgency": "novedad",
+    "editorialStatus": "publicado",
+    "validityStatus": "proximo",
+    "publishDate": "2026-11-08T10:00:00Z",
+    "startDate": "2026-12-01",
+    "endDate": "2026-12-31",
+    "effectiveDate": "Inicia el 01/12/2026 hasta el 31/12/2026",
+    "author": "Nelyess (Capacitadora Comercial Bitel)",
+    "source": "Planeamiento Comercial Bitel",
+    "targetAudience": [
+      "Toda la Fuerza de Ventas Bitel"
+    ],
+    "content": "Adelanto informativo para preparación de equipos comerciales y supervisores de tienda. No divulgar aún en piezas masivas a clientes finales.",
+    "whatChanges": [
+      "Clientes que porten a B-Smart 39.90 o superior recibirán el doble de gigas de alta velocidad por 12 ciclos consecutivos."
+    ],
+    "whatStays": [
+      "Tarifa fija mensual del plan contratado."
+    ],
+    "salesArguments": [
+      "Bono de doble de gigas garantizado por 1 año completo sin condición de renovación."
+    ],
+    "systemCodes": [
+      {
+        "system": "SISACT",
+        "code": "PORTA_DOBLE_GIGAS_NAVIDAD",
+        "description": "Código preliminar de campaña navideña"
+      }
+    ],
+    "viewsCount": 740,
+    "subjectToStock": false,
+    "version": 1,
+    "relatedDocumentIds": []
+  }
+]

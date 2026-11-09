@@ -1,0 +1,13 @@
+import configuration from '../contenido/configuracion.json';
+import news from '../contenido/novedades.json';
+import devices from '../contenido/equipos.json';
+import plans from '../contenido/planes.json';
+import documents from '../contenido/documentos.json';
+import historicalArchive from '../contenido/historico.json';
+import categories from '../contenido/categorias.json';
+import blocks from '../contenido/bloques.json';
+import learning from '../contenido/capacitaciones.json';
+import fixedPosts from '../contenido/publicaciones-fijas.json';
+import type {PublicContentResponse} from './types';
+export const content = {...configuration,news,devices,plans,documents,historicalArchive,categories,blocks,learning,fixedPosts} as unknown as PublicContentResponse;
+export const repositoryUrl=configuration.repositoryUrl;

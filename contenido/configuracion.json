@@ -1,0 +1,95 @@
+{
+  "headerBranding": {
+    "brandInitials": "NC",
+    "portalName": "Nelyess Capacita",
+    "subtitle": "Portal de capacitación y novedades comerciales de Bitel",
+    "mainTitle": "Novedades y herramientas comerciales Bitel",
+    "description": "Consulta en tiempo real qué cambió, a quién aplica y la vigencia oficial de productos y precios.",
+    "searchPlaceholder": "Buscar planes, equipos, novedades o documentos...",
+    "headerTheme": "default",
+    "showAnnouncements": true,
+    "announcements": [
+      {
+        "id": "ann_1",
+        "text": "Atención Asesores: Actualización oficial del portafolio Pospago B-Smart vigente para el ciclo de facturación actual.",
+        "type": "urgente",
+        "active": true,
+        "order": 1,
+        "linkUrl": "#novedades"
+      },
+      {
+        "id": "ann_2",
+        "text": "Nuevo protocolo de validación biométrica en reposición de chip SIM activo en plataforma B-POS.",
+        "type": "informativo",
+        "active": true,
+        "order": 2
+      }
+    ]
+  },
+  "themeSettings": {
+    "primaryColor": "#0f766e",
+    "accentColor": "#d97706",
+    "surfaceTheme": "light",
+    "fontFamily": "Inter",
+    "titleScale": "standard",
+    "cardDensity": "compact",
+    "borderRadius": "standard",
+    "footerNotice": "Uso comercial exclusivo para la red de capacitación y ventas de Bitel Perú."
+  },
+  "menuItems": [
+    {
+      "id": "menu_novedades",
+      "label": "Novedades",
+      "targetType": "internal",
+      "targetPath": "novedades",
+      "order": 1,
+      "isVisible": true,
+      "isSystemDefault": true
+    },
+    {
+      "id": "menu_equipos",
+      "label": "Equipos",
+      "targetType": "internal",
+      "targetPath": "equipos",
+      "order": 2,
+      "isVisible": true,
+      "isSystemDefault": true
+    },
+    {
+      "id": "menu_planes",
+      "label": "Planes",
+      "targetType": "internal",
+      "targetPath": "planes",
+      "order": 3,
+      "isVisible": true,
+      "isSystemDefault": true
+    },
+    {
+      "id": "menu_documentos",
+      "label": "Documentos",
+      "targetType": "internal",
+      "targetPath": "documentos",
+      "order": 4,
+      "isVisible": true,
+      "isSystemDefault": true
+    },
+    {
+      "id": "menu_historico",
+      "label": "Archivo Histórico",
+      "targetType": "internal",
+      "targetPath": "historico",
+      "order": 5,
+      "isVisible": true,
+      "isSystemDefault": true
+    },
+    {
+      "id": "menu_capacitaciones",
+      "label": "Capacitaciones",
+      "targetType": "internal",
+      "targetPath": "capacitaciones",
+      "order": 99,
+      "isVisible": true
+    }
+  ],
+  "repositoryUrl": "https://github.com/nelyess/nelyess-capacita"
+}

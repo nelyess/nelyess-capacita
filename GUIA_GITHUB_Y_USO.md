@@ -1,145 +1,114 @@
-# Nelyess Capacita — guía de uso y publicación
+# Nelyess Capacita — SOLO GitHub Pages
 
-## 1. Qué contiene esta entrega
+Esta versión guarda el código y el contenido público en tu repositorio. GitHub Actions compila la página y GitHub Pages la publica. No necesita Render, servidor Express, base de datos ni claves. La administración se realiza con tu cuenta de GitHub, editando archivos. El botón «Administrar en GitHub» explica cómo hacerlo; no es un editor visual ni un acceso con contraseña propio.
 
-Proyecto completo React + Express, conservando los datos entregados en `data/portal_database.json`.
+## Publicar por primera vez
 
-Cambios:
-- Capacitaciones con área, subtema, objetivo, requisitos, pasos, errores frecuentes y material de Drive.
-- Publicaciones fijas y comunicados que no caducan automáticamente, con orden manual, borradores, archivo y papelera.
-- Enlace directo de Drive en el editor de las novedades principales; vista previa en ventana y opción de abrir el original.
-- Panel administrativo de pantalla completa; la página pública queda oculta mientras se administra.
-- Histórico editable, filtros de año/mes/categoría/tipo, agrupación mensual y orden descendente de fecha.
-- Registro de cambios buscable y versiones de los nuevos contenidos restaurables.
-- Retiro de contraseñas predeterminadas del código; acceso configurado por el propietario.
+1. Descomprime Nelyess_SOLO_GITHUB_PAGES.zip en tu computadora.
+2. Abre https://github.com/nelyess/nelyess-capacita e inicia sesión.
+3. En Code, pulsa Add file → Upload files. Arrastra el CONTENIDO de la carpeta descomprimida, no el ZIP ni la carpeta que lo contiene. Incluye las carpetas src, contenido, scripts, tests y .github, además de los archivos sueltos. Acepta reemplazar los archivos con el mismo nombre y pulsa Commit changes.
+4. Verifica que package.json e index.html estén directamente en la raíz. Verifica también que exista .github/workflows/check.yml con el texto del archivo incluido. Si no se subió .github: Add file → Create new file; escribe `.github/workflows/check.yml`, pega su contenido y guarda. Si ya existe, ábrelo y usa el lápiz para reemplazar su contenido.
+5. Settings → Pages → Build and deployment → Source: selecciona **GitHub Actions**. Deja Custom domain vacío. No necesitas comprar ni inventar un dominio.
+6. Actions → Publicar Nelyess en GitHub Pages → Run workflow → selecciona tu rama principal → Run workflow. Si pide habilitar Actions, habilítalo en tu repositorio.
+7. Espera a que build y deploy aparezcan verdes. Abre https://nelyess.github.io/nelyess-capacita/ y pulsa Ctrl+F5 si aún ves la versión anterior.
 
-Esta entrega modifica el archivo del proyecto. No reemplaza automáticamente la web alojada en nelyess.ai.studio.
+Las ramas main, master y principal se publican automáticamente al guardar cambios. Si tu rama tiene otro nombre, cambia `branches` en el workflow. Si el primer intento falló porque aún no seleccionabas GitHub Actions en Pages, vuelve a ejecutarlo después del paso 5.
 
-## 2. Ejecutarlo en tu computadora (Windows)
+Los archivos antiguos de Express no se utilizan en esta versión. No sigas las instrucciones antiguas de Render. Si existe un archivo CNAME de un dominio que no tienes, elimínalo y confirma que Custom domain esté vacío. Conserva solo un workflow de despliegue de Pages: este paquete reemplaza `.github/workflows/check.yml`; si creaste otro despliegue anterior, desactívalo para evitar publicaciones simultáneas.
 
-1. Instala Node.js 22.12 o superior desde https://nodejs.org/.
-2. Extrae el ZIP. Abre la carpeta `nelyess-capacita`.
-3. Copia `.env.example` y renombra la copia a `.env`. En el Explorador activa la visualización de extensiones para no crear `.env.txt`.
-4. Abre `.env` con un editor. Define `ADMIN_USERNAME` y una contraseña larga y única en `ADMIN_PASSWORD`. No dejes este valor vacío.
-5. Abre una terminal dentro de esa carpeta y ejecuta:
+## Editar desde GitHub
 
-```bash
-npm ci
-npm run dev
+Abre `contenido`, selecciona el archivo, pulsa el lápiz, modifica el texto y pulsa Commit changes. Espera al despliegue verde. Los visitantes verán los cambios después de la publicación; actualizar el navegador puede ser necesario. No hay guardado compartido en localStorage: solo los marcadores personales se guardan en el navegador de cada usuario.
+
+| Qué modificar | Archivo dentro de contenido |
+|---|---|
+| Nombre, encabezado, avisos superiores, menú y pie | configuracion.json |
+| Novedades y comunicados principales | novedades.json |
+| Noticias y comunicados permanentes | publicaciones-fijas.json |
+| Capacitaciones | capacitaciones.json |
+| Crear, editar o eliminar categorías | categorias.json |
+| Planes | planes.json |
+| Equipos | equipos.json |
+| Documentos y enlaces | documentos.json |
+| Evidencias antiguas ordenadas | historico.json |
+| Secciones de texto, listas y enlaces | bloques.json |
+
+Para añadir un elemento copia uno completo dentro de la lista, separándolo con una coma; asigna un `id` distinto. Para quitarlo, elimina su objeto y ajusta la coma. Para vaciar una sección utiliza `[]`. JSON requiere comillas dobles, sin comentarios ni comas después del último elemento. Si algo queda mal, Actions lo marcará en rojo y no reemplazará la última página publicada. Abre el trabajo build para leer el error, corrige y vuelve a guardar.
+
+Cambiar el nombre u orden de un menú es posible en configuracion.json. Los destinos internos disponibles son novedades, equipos, planes, documentos, historico, capacitaciones y bloques. Para nuevas pantallas con funciones distintas hay que editar el código de src; no basta inventar un destino. El diseño visual se modifica en src/index.css y src/App.tsx. No todos los valores heredados de themeSettings alteran el diseño; footerNotice sí controla el pie.
+
+## Plantilla para una capacitación o publicación fija
+
+Puedes pegar la siguiente lista completa en capacitaciones.json si está vacío. Para publicaciones-fijas.json cambia kind a comunicado y adapta categoría, título y contenido. Las publicaciones fijas no caducan automáticamente: permanecen mientras editorialStatus sea publicado.
+
+```json
+[
+  {
+    "id": "cap-001",
+    "title": "Activaciones en línea: postpago",
+    "summary": "Material de capacitación para asesores.",
+    "content": "Escribe aquí los pasos aprobados. Usa \\n para separar líneas.",
+    "category": "Activaciones en línea",
+    "subcategory": "Postpago",
+    "order": 1,
+    "editorialStatus": "publicado",
+    "kind": "capacitacion",
+    "driveUrl": "",
+    "source": "Indica la fuente y fecha del material",
+    "audience": "Asesores",
+    "author": "Administrador",
+    "createdAt": "2026-11-09T12:00:00Z",
+    "updatedAt": "2026-11-09T12:00:00Z",
+    "eventDate": "2026-11-09",
+    "requirements": "",
+    "commonErrors": "",
+    "version": 1
+  }
+]
 ```
 
-6. Abre http://localhost:3000.
-7. Usa “Acceso Capacitador” o http://localhost:3000/#admin y tus credenciales.
+Para otras capacitaciones duplica el objeto con otro id. Puedes usar subcategoría Prepago; o categoría Procesos regulatorios — Perú, con subcategorías Reclamos, Reclamaciones, Derechos ARCO y Otros procesos. Agrega material verificado por ti: el portal no inventa ni actualiza procedimientos regulatorios.
 
-No hay una contraseña universal. Los perfiles heredados del respaldo no habilitan cuentas adicionales: esta versión utiliza una cuenta administradora configurada en el servidor. Cambiar sus variables requiere reiniciar; ese reinicio cierra sesiones anteriores.
+## Drive en comunicados y capacitaciones
 
-## 3. Uso de las nuevas secciones
+En novedades.json, publicaciones-fijas.json y capacitaciones.json usa `"driveUrl": "https://drive.google.com/file/d/ID_DEL_ARCHIVO/view"` con el enlace REAL copiado desde Compartir en Drive. Aparece la opción de previsualizar en una ventana y abrir el original. Las carpetas se abren en Drive; no se previsualizan como un documento.
 
-### Comunicado principal con Drive
+El archivo sigue almacenado en Drive, no se copia a GitHub. Compartir el enlace de la página no elimina el archivo. Para que cualquier visitante pueda verlo, configura en Drive Compartir → Acceso general → Cualquier persona con el enlace → Lector, si corresponde a ese documento. Si es restringido, cada visitante necesitará permiso; algunas organizaciones bloquean el acceso público. La vista previa depende del formato, permisos y restricciones de Drive. Siempre queda disponible abrir el enlace original. No hay fotografías decorativas ni carga de imágenes al portal; un documento de Drive sí puede contener imágenes propias.
 
-En Administración → Novedades y Publicaciones → Crear o Editar:
-- Completa el comunicado.
-- Pega el enlace completo en “Enlace de Drive para previsualizar en este comunicado”.
-- Selecciona Publicado y guarda.
-- En la vista pública aparecerá “Previsualizar documento”.
+## Archivo histórico ordenado
 
-Se admiten archivos de Drive y documentos, hojas o presentaciones de Google. Las carpetas y otros enlaces se abren en la página original. El botón no sube ni copia archivos a Drive: registra el enlace.
+Usa historico.json para evidencias anteriores. Mantén el enlace original en documentUrl o driveFolderUrl y una fecha eventDate consistente con year y month. La web ordena por fecha y agrupa por año y mes, con filtros. Guardar cambios en GitHub conserva versiones del código, pero no mueve automáticamente noticias vencidas al archivo: agrega la evidencia al histórico cuando corresponda.
 
-La ventana no modifica permisos. Si el documento está restringido, Google puede pedir acceso. Si Google no permite visualizarlo dentro de una ventana o el navegador lo bloquea, usa “Abrir original”. La aplicación no puede detectar todos los errores internos de Google por tratarse de otro dominio.
-
-### Publicaciones fijas
-
-En Administración → Publicaciones fijas:
-- Agrega noticias del día o comunicados.
-- Usa Categoría para clasificarlos y Orden para determinar su posición.
-- Publica cuando estén listos.
-- No desaparecen por antigüedad; se retiran manualmente cambiando el estado.
-- “Papelera” permite restaurarlos como borrador.
-
-### Capacitaciones
-
-En Administración → Capacitaciones:
-- Área: Activaciones o Procesos regulatorios — Perú.
-- Subtema: Postpago, Prepago, Reclamos, Reclamaciones, Derechos ARCO u otro.
-- Estos campos permiten escribir categorías y subtemas nuevos.
-- Escribe los pasos en el contenido y agrega el enlace al material.
-- El portal empieza sin capacitaciones ficticias; publica tus propios contenidos validados.
-
-### Histórico ordenado
-
-En Administración → Archivo Histórico puedes incorporar o editar evidencias, su fecha, categoría y enlace. La fecha determina el año y el mes automáticamente.
-
-En la web pública los registros se agrupan por mes, del más reciente al más antiguo. Puedes filtrar por año, mes, categoría y tipo. Los registros de visibilidad interna solo aparecen en la administración.
-
-Archivar una publicación fija la retira de la sección pública. Para catalogarla además como evidencia en el histórico, crea el registro correspondiente con su fecha y enlace.
-
-### Versiones y respaldo
-
-“Papelera e Historial” muestra los cambios más recientes primero y permite buscar por título o responsable. “Restaurar versión” aparece para las entidades compatibles.
-
-“Respaldos JSON” exporta los datos. Incluye también las nuevas publicaciones y capacitaciones. El respaldo contiene enlaces, no copias de los archivos de Drive. Guarda los originales en Drive y conserva respaldos periódicos de la base.
-
-## 4. Subir el código gratis a GitHub
-
-Guardar un repositorio en GitHub no es lo mismo que poner en funcionamiento el servidor de la web.
-
-### Opción sencilla: GitHub Desktop
-
-1. Crea una cuenta en https://github.com/ si no tienes una.
-2. Instala GitHub Desktop desde https://desktop.github.com/ e inicia sesión.
-3. Elige File → Add local repository y selecciona la carpeta del proyecto.
-4. Si no existe un repositorio, utiliza la opción para crear uno en esa carpeta.
-5. Antes del primer commit, verifica los archivos seleccionados. No incluyas `.env`, `data/`, `node_modules/`, `dist/` ni respaldos personales. El `.gitignore` incluido los excluye cuando utilizas Git.
-6. Escribe un resumen, por ejemplo “Portal Nelyess actualizado”, y realiza el commit.
-7. Pulsa Publish repository y conserva “Keep this code private” si el contenido no debe ser público.
-8. Cuando cambies código, realiza un nuevo commit y pulsa Push origin.
-
-### Opción desde la web
-
-1. En GitHub, crea un repositorio con New repository.
-2. Elige su nombre y visibilidad. Para material interno, usa Private.
-3. Selecciona Add file → Upload files.
-4. Sube los archivos extraídos del proyecto; subir solamente el ZIP no configura la aplicación.
-5. Excluye manualmente `.env`, `data/`, `node_modules/`, `dist/` y respaldos privados. La carga web no aplica automáticamente las exclusiones de `.gitignore`.
-6. Guarda con Commit changes.
-
-Conserva `data/portal_database.json` de este ZIP como respaldo privado para transferirlo al servidor. Al no subirlo al repositorio, una instalación nueva comienza con los datos de ejemplo del código; puedes restaurar tu JSON desde el panel.
-
-## 5. Publicar la web con editor funcional
-
-GitHub Pages sirve archivos estáticos. Este proyecto necesita Node.js/Express y un disco persistente; no funcionará completo simplemente activando Pages.
-
-En un alojamiento que ejecute Node.js:
-
-- Instalación y compilación: `npm ci && npm run build`.
-- Inicio: `npm start`.
-- Variable `NODE_ENV=production`.
-- Configura `ADMIN_USERNAME` y `ADMIN_PASSWORD` en los secretos del alojamiento.
-- Configura `DATA_DIR` con la ruta de un volumen persistente (por ejemplo `/var/data/nelyess`, si ese volumen existe en tu proveedor).
-- Usa HTTPS y una sola instancia del proceso para esta base de datos JSON.
-- Restaura tu respaldo desde el panel después de iniciar el servidor.
-- Verifica un cambio publicado desde otro dispositivo y después de reiniciar el servicio.
-
-No guardes datos definitivos en un disco temporal: un despliegue puede borrarlos. Esta entrega no incluye una cuenta de alojamiento ni garantiza un plan gratuito con disco persistente. Subir el código a GitHub sí es independiente del costo del servidor.
-
-Para ejecutar localmente la compilación de producción en PowerShell:
-
-```powershell
-npm run build
-$env:NODE_ENV="production"
-npm start
+Ejemplo de objeto para incluir dentro de la lista:
+```json
+{
+  "id": "hist-001",
+  "title": "Comunicado archivado",
+  "description": "Descripción de la evidencia.",
+  "category": "Comunicados",
+  "tags": ["2026", "postpago"],
+  "eventDate": "2026-11-09",
+  "year": 2026,
+  "month": 11,
+  "addedDate": "2026-11-09T12:00:00Z",
+  "source": "Administración",
+  "documentType": "comunicado_historico",
+  "documentUrl": "",
+  "driveFolderUrl": "",
+  "visibility": "publico",
+  "statusText": "Histórico: no utilizar como condición comercial vigente"
+}
 ```
 
-## 6. Validaciones y límites
+## Acceso y versiones
 
-Comprobados: TypeScript, compilación de producción y pruebas automáticas de enlaces Drive, acceso no autorizado, rechazo de claves antiguas, borradores privados, publicación permanente, evidencias internas, restauración y persistencia tras reiniciar.
+Los visitantes pueden leer la web sin cuenta. Solo tú y los colaboradores con permisos en GitHub pueden guardar cambios en el repositorio. Para consultar versiones abre el archivo y History. No hay cuentas de administrador propias ni base de datos privada. El código público no implica permiso de modificación para cualquier visitante; agrega una licencia si quieres conceder derechos específicos de reutilización.
 
-La revisión visual en navegador remoto no pudo conectarse al servidor local de esta sesión. La visualización real de cada documento de Drive depende de sus permisos y no fue validada con documentos privados del usuario.
+Todo archivo subido a un repositorio público es visible, incluso un borrador oculto en la web y versiones anteriores eliminadas después. No subas contraseñas, tokens o evidencia privada. El contenido de ejemplo conservado no está verificado como oferta comercial actual: reemplázalo por tus datos antes de usarlo comercialmente.
 
-El almacenamiento es un archivo JSON en el servidor, no una base de datos externa. Evita ejecutar varias instancias sobre archivos distintos. Las sesiones se mantienen en memoria y finalizan al reiniciar. La configuración de cuentas múltiples y despliegue externo no forma parte de esta entrega.
+Para reportes, el portal enlaza a Issues de GitHub: habilita Issues en Settings → General → Features si deseas usarlo. El visitante necesita cuenta y publica el reporte allí; no se envía desde la página.
 
-## Fuentes de consulta
+## Verificación técnica
 
-- GitHub Pages y su funcionamiento estático: https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages
-- Crear un sitio con Pages: https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
-- GitHub Desktop: https://docs.github.com/en/desktop/adding-and-cloning-repositories/adding-a-repository-from-your-local-computer-to-github-desktop
+Node 24: `npm ci`, `npm run lint`, `npm test`, `npm run build`.
+El resultado publicable está en dist. El workflow lo genera automáticamente. No publiques src/main.tsx directamente: el navegador necesita los archivos JavaScript compilados. El base relativo permite publicar bajo /nelyess-capacita/.

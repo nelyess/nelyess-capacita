@@ -1,0 +1,53 @@
+[
+  {
+    "id": "doc_cartilla_bsmart",
+    "title": "Cartilla Comercial Oficial B-Smart Noviembre",
+    "description": "Documento normativo con la matriz completa de gigas, tarifas mensuales, redes sociales libres y condiciones de contratación.",
+    "url": "https://drive.google.com/file/d/1A-Cartilla_B-Smart_Bitel_Nov2026/view?usp=sharing",
+    "provider": "google_drive",
+    "fileType": "pdf",
+    "categoryId": "cat_pospago",
+    "tags": [
+      "B-Smart",
+      "Pospago",
+      "Cartilla",
+      "Tarifas"
+    ],
+    "documentDate": "2026-11-05",
+    "addedDate": "2026-11-05T09:00:00Z",
+    "versionNumber": "v2.1",
+    "authorOrSource": "Dirección Comercial Bitel",
+    "relatedEntity": {
+      "type": "noticia",
+      "id": "news_1",
+      "name": "Actualización Portafolio Pospago B-Smart"
+    },
+    "visibility": "publico",
+    "status": "vigente",
+    "accessCheckStatus": "no_verificado",
+    "isEvidence": false
+  },
+  {
+    "id": "doc_guia_fibra",
+    "title": "Manual de Venta y Cobertura Bitel Fibra Óptica",
+    "description": "Guía técnica para asesores de terreno y tiendas sobre factibilidad FTTH, instalación y características de Wi-Fi 6 Mesh.",
+    "url": "https://drive.google.com/file/d/1C-Manual_Ventas_Bitel_Fibra_2026/view?usp=sharing",
+    "provider": "google_drive",
+    "fileType": "pdf",
+    "categoryId": "cat_fibra",
+    "tags": [
+      "Fibra",
+      "Hogar",
+      "Wi-Fi 6",
+      "Manual Venta"
+    ],
+    "documentDate": "2026-11-01",
+    "addedDate": "2026-11-01T11:00:00Z",
+    "versionNumber": "v3.0",
+    "authorOrSource": "Área de Capacitación Hogar Bitel",
+    "visibility": "publico",
+    "status": "vigente",
+    "accessCheckStatus": "no_verificado",
+    "isEvidence": false
+  }
+]

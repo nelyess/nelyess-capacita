@@ -1,0 +1,23 @@
+[
+  {
+    "id": "hist_1",
+    "title": "Campaña Bono Giga Adicional Q3 2026",
+    "description": "Promoción de datos extra en recargas de S/ 3 y S/ 5 aplicable durante el tercer trimestre de 2026.",
+    "category": "Prepago TiMi",
+    "tags": [
+      "Prepago",
+      "Bono",
+      "Q3",
+      "Recargas"
+    ],
+    "eventDate": "2026-10-31",
+    "year": 2026,
+    "month": 10,
+    "addedDate": "2026-11-01T00:00:00Z",
+    "source": "Boletín Comercial Bitel Nº 38-2026",
+    "documentType": "promocion_vencida",
+    "documentUrl": "https://drive.google.com/file/d/1Hist-Bono_Giga_Q3_2026/view?usp=sharing",
+    "visibility": "publico",
+    "statusText": "Histórico: no utilizar como condición comercial vigente"
+  }
+]
