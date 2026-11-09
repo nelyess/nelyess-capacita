@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-sans: 'DM Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+.nc-surface { background:white; border:1px solid #e2e8f0; border-radius:16px; padding:24px; }
+.nc-input { border:1px solid #cbd5e1; border-radius:8px; padding:10px 12px; background:white; min-width:0; max-width:100%; }
+.nc-button { display:inline-flex; align-items:center; justify-content:center; padding:9px 13px; border-radius:9px; background:#0f172a; color:white; font-size:12px; font-weight:600; cursor:pointer; }
+.nc-button:disabled { opacity:.5; cursor:wait; }
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible { outline:3px solid #f59e0b; outline-offset:2px; }
